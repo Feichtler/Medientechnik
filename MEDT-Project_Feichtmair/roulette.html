@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#9830 Roulette &#9830</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./roulette.js" defer></script>
+</head>
+<style>
+    @import url('http://fonts.cdnfonts.com/css/casino');
+</style>
+<body>
+    <a href="./home.html"><button class="back">&#11013</button></a>
+    
+    <center><div id="win" style="margin: 0;"></div></center>
+
+    <div style="display: flex;">
+        <div style="width: 50%;">
+    <h1 id="generated" style="font-size: 100px; text-align: right; margin-right: 20%; border-bottom: 5px solid black;">0</h1>
+</div>
+<div style="width: 50%;">
+    <img id="img" style="width: 50%; margin-left: 25%; cursor: pointer;" onclick="generate()" src="img/roulette-board.png" alt="">
+</div>
+</div>
+
+
+<div style="display: flex; margin-left: 4%;">
+<div>
+<h1 style="color: rgb(0, 0, 0); margin-left: 2%; margin-top: 0%">current guess:</h1>
+</div>
+<div>
+    <h1 id="guessednumber" style="color: grey; margin-left: 2%; margin-top: 0%; font-size: 75px;">0</h1>
+    </div>
+</div>
+
+
+<center><input id="guess" type="number" placeholder="guess a number" style="width: 45%; border-radius: 15px; height: 5vh; margin-top: 5%;"></center>
+<center><button onclick="submit()" style="margin-bottom: 5%;">Submit</button></center>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* #dealer {
+    display: grid;
+    gap: 3vw;
+    width: 50vw;
+}
+
+#player{
+    display: grid;
+    gap: 2vw;
+} */
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Casino Flat', sans-serif;
+    color: black;
+    background-color: rgb(0, 80, 0);
+    background: rgb(4, 118, 0);
+    background: radial-gradient(circle, rgba(4, 118, 0, 1) 0%, rgba(0, 60, 8, 1) 100%);
+}
+
+button{
+    cursor: pointer;
+    margin-bottom: 6%;
+    margin-top: 4%;
+    padding: 2%;
+    width: 45%;
+    font-family:  'Casino Flat', sans-serif;
+    font-size: larger;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+button:hover{
+    animation: shadow-drop-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.back{
+    width: 6%;
+    border-radius: 100px;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 20px;
+}

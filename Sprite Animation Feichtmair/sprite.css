@@ -1,0 +1,149 @@
+/* keyboard.css */
+html, body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("./bbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+#surface {
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  border: 5px solid white;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  box-shadow: 10px 10px 5px #888888;
+}
+#coin{
+
+  width: 3vw;
+}
+#spawnCoin{  position: absolute;}
+
+#sprite {
+  position: absolute;
+  width: 40px; /* ANPASSEN! Testen und im Browser/Entwicklerumgebung analysieren */
+  height: 35px;
+  overflow: hidden;
+}
+#spriteImg {
+  height: 35px; /* ANPASSEN! 150 = 6*25 (25->Containerhöhe, 6->Zeilen im PNG) */
+  position: relative;
+  bottom: 0px;
+}
+
+.wrapper{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#counter{
+  color: rgb(6, 82, 82);
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+h1{
+  letter-spacing: 5px;
+  margin-top: 1%;
+  color: white;
+}
+
+
+@keyframes blink-1 {
+
+  5%,
+  15%,
+  25%,
+  35%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85%,
+  95%
+  {
+    opacity: 1;
+  }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+}
+
+#streak{
+  text-align: right;
+  font-weight: bolder;
+  color: red;
+  margin-right: 2%;
+  font-size: larger;
+  letter-spacing: 3px;
+  animation: blink-1 25s both;
+
+}
+
+
+@keyframes slide-top {
+  0% {
+            transform: translateY(-630px);
+  }
+  50%{
+    transform: translateY(-250px);
+
+  }100%{
+    transform: translateY(-630px);
+  }
+
+}
+
+
+
+#cloud1{
+animation: slide-top 5s infinite alternate both;
+
+}
+
+
+#startbox{
+  margin-top: 15%;
+  border: 3px solid black;
+  border-radius: 7px;
+  color: black;
+  letter-spacing: 5px;
+
+}
+
+#startbox>button,input,h2{
+  margin-bottom: 3%;
+  margin-left: 2%;
+}
+
+
+#won{
+  text-align: center;
+}
+
+
+button{
+  text-decoration: none;
+  background-color: aqua;
+  color: blanchedalmond;
+  border-radius: 5px;
+}

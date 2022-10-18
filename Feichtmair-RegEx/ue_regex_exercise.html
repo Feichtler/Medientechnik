@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html lang="de">
+ <head>
+ <title>RegEx - CheatSheet</title>
+ <link rel="stylesheet" href="style.css" type="text/css" />
+ </head>
+
+ <body>
+
+    <section>
+      
+        <h1>Regular Expression - Examples</h1>
+        <div class="tbl-header">
+          <table>
+              
+            <thead>
+              <tr>
+                <th>RegEx</th>
+                <th>Filterbereich</th>
+                <th>Möglicher Beispieltext</th>
+              </tr>
+            </thead>
+
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table>
+            <tbody>
+
+              <tr>
+                <td>([A-Z] [a-z]) \w+</td>
+                <td>Nur Wörter, die mit Großbuchstaben beginnen</td>
+                <td>Dies ist ein einfacher Beispieltext. Dies ist ein einfacher Beispieltext.</td>
+              </tr>
+
+              <tr>
+                <td>([1-9] [0-9] {3}) +</td>
+                <td>4-stellige Zahl filtern, erste Zahl ungleich 0</td>
+                <td>0123 4293 38293 012 0456 3948 2839</td>
+              </tr>            
+
+              <tr>
+                <td>((https:\/\/) | (http:\/\/)) ([0-9A-z] + [\.\-\~\_]) + [0-9A-z] +</td>
+                <td>Vollständige Internetadressen filtern (z.B. https://www.google.de - Prüfung auf Sonderzeichen, HTTPS, WWW optional, ...)</td>
+                <td>Mehr Infos gibt es auf https://www.htl-leonding.at oder auch auf https://developer.mozilla.org </td>
+              </tr>
+             
+              <tr>
+                <td>( [A-z] * (r|R) + [A-z] * ) +</td>
+                <td>Alle Wörter die den Buchstaben R/r enthalten</td>
+                <td>Dast ist ein einfacher Beispieltext für das Anfertigen von Regular Expressions. Das ist ein einfacher Beispieltext.</td>
+              </tr>
+
+              <tr>
+                <td>((Apfel) | (apfel)) +</td>
+                <td>Das Wort APFEL als ganzes Wort (nicht Bestandteil) filtern</td>
+                <td>Der Apfel fiel vom Apfelbaum. Apfel als Bestandteil von Apfelsaft.</td>
+              </tr>
+
+              <tr>
+                <td>(z [A-z] + ) +</td>
+                <td>Nur Wörter, welche mit kleinem z beginnen.</td>
+                <td>Die zahl die Zahl zeichen Ziffer.</td>
+              </tr>
+            
+              <tr>
+                <td>(([A-z] [^Ss] ) +s {2} [A-z] *) +</td>
+                <td>Wörter, in welchen genau zwei S/s hintereinander vorkommen aber nicht mit S/s beginnen</td>
+                <td>Nase Fluss Schloss Kissen Stress lesen</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+
+ </body>
+
+ </html>

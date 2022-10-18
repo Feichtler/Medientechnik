@@ -1,0 +1,50 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(255,255,255);
+}
+
+
+
+.flex{
+    display: flex;
+    
+    width: 100%;    
+}
+
+.box{
+    border-radius: 2vh;
+    margin-top: 3%;
+    width: 19%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 7px solid rgb(72, 188, 255);
+}
+
+img{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+h2{
+    text-align: center;
+}
+
+#data1, #data2, #data3, #data4, #data5, #data6, #data7, #data8, #data9, #data10{
+    padding: 10%;
+}
+
+#footer{
+    padding: 4%;
+}
+
+.headline{   
+ 
+    background-color: rgb(17, 209, 0);
+    color: white;
+    padding: 2%;
+    padding-bottom: 2%;
+    margin: 0%;
+
+}
